@@ -1,0 +1,335 @@
+.mypagereview-maincontainer {
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 11rem;
+}
+.mypagereview-reviewselect {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 82%;
+  margin-bottom: 1rem;
+  .mypagereview-reviewname {
+    margin-left: 1rem;
+  }
+  .mypagereview-select {
+    width: 12rem;
+  }
+}
+.mypagereview-startline {
+  width: 82%;
+  height: 3px;
+  background: #bcbcbc;
+}
+.mypagereview-container {
+  width: 100%;
+  height: 15rem;
+  display: grid;
+  grid-template-rows: 30% 40% 30%;
+  grid-template-columns: 20% 40% 30%;
+}
+.mypagereview-grid-name {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.mypagereview-grid-image {
+  width: 95%;
+  height: 9rem;
+  border-radius: 5px;
+  background-color: #d9d9d9;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.mypagereview-grid-score {
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  span {
+    margin-left: 1rem;
+  }
+}
+.mypagereview-grid-date {
+  height: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+.mypagereview-grid-contents {
+  margin-top: -4rem;
+  color: #7b7b7b;
+  font-weight: 400;
+  font-size: 1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.mypagereview-grid-edit {
+  margin: auto;
+  width: 7rem;
+  height: 3rem;
+  border: 1px solid #ff611d;
+  background-color: #ff611d;
+  border-radius: 5px;
+  color: white;
+  margin-top: -2rem;
+}
+.mypagereview-bottomline {
+  width: 82%;
+  height: 2px;
+  background-color: #bcbcbc;
+}
+.mypagereview-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 11rem;
+  margin-bottom: 11rem;
+}
+//테블릿
+
+.tablet-mypagereview-maincontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rem;
+}
+.tablet-mypagereview-reviewselect {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+  .tablet-mypagereview-reviewname {
+    margin-left: 1rem;
+  }
+  .tablet-mypagereview-select {
+    width: 12rem;
+  }
+}
+.tablet-mypagereview-startline {
+  width: 100%;
+  height: 3px;
+  background: #bcbcbc;
+}
+.tablet-mypagereview-container {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 15rem;
+  display: grid;
+  grid-template-rows: 30% 40% 30%;
+  grid-template-columns: 20% 40% 30%;
+}
+.tablet-mypagereview-grid-name {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.tablet-mypagereview-grid-image {
+  width: 95%;
+  height: 9rem;
+  border-radius: 5px;
+  background-color: #d9d9d9;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.tablet-mypagereview-grid-score {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  span {
+    margin-left: 1rem;
+  }
+}
+.tablet-mypagereview-grid-date {
+  height: 1rem;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  text-align: center;
+}
+.tablet-mypagereview-grid-contents {
+  margin-top: -6rem;
+  color: #7b7b7b;
+  font-weight: 400;
+  font-size: 1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.tablet-mypagereview-grid-edit {
+  margin: auto;
+  width: 7rem;
+  height: 3rem;
+  border: 1px solid #ff611d;
+  background-color: #ff611d;
+  border-radius: 5px;
+  color: white;
+  margin-top: -2rem;
+}
+.tablet-mypagereview-bottomline {
+  width: 100%;
+  height: 2px;
+  background-color: #bcbcbc;
+}
+.tablet-mypagereview-pagination {
+  width: 100%;
+  margin-bottom: 7rem;
+}
+//모바일
+
+.mobile-mypagereview-maincontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rem;
+}
+.mobile-mypagereview-reviewselect {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+  .mobile-mypagereview-reviewname {
+    margin-left: 1rem;
+  }
+  .mobile-mypagereview-select {
+    width: 10rem;
+    margin-right: 1rem;
+  }
+}
+.mobile-mypagereview-startline {
+  width: 100%;
+  height: 3px;
+  background: #bcbcbc;
+}
+.mobile-mypagereview-container {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 15rem;
+  display: grid;
+  grid-template-rows: 30% 40% 30%;
+  grid-template-columns: 20% 40% 30%;
+}
+.mobile-mypagereview-grid-name {
+  margin-top: 3.6rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.mobile-mypagereview-grid-image {
+  width: 100%;
+  height: 6rem;
+  border-radius: 5px;
+  background-color: #d9d9d9;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  margin-bottom: 2.6rem;
+}
+.mobile-mypagereview-grid-score {
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  span {
+    margin-left: 1rem;
+  }
+}
+.mobile-mypagereview-grid-date {
+  height: 1rem;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  text-align: center;
+}
+.mobile-mypagereview-grid-contents {
+  margin-left: 1rem;
+  margin-top: -6rem;
+  color: #7b7b7b;
+  font-weight: 400;
+  font-size: 1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.mobile-mypagereview-grid-edit {
+  margin: auto;
+  width: 5rem;
+  height: 3rem;
+  border: 1px solid #ff611d;
+  background-color: #ff611d;
+  border-radius: 5px;
+  color: white;
+  margin-top: -2rem;
+}
+.mobile-mypagereview-bottomline {
+  width: 100%;
+  height: 2px;
+  background-color: #bcbcbc;
+}
+.mobile-mypagereview-pagination {
+  margin-bottom: 5rem;
+}
+
+//default
+
+.mypagereview-modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.mypagereview-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.mypagereview-modal-animation {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+.mypagereview-modal-fadeOut {
+  opacity: 1;
+  animation-name: fadeOut;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+  }
+}

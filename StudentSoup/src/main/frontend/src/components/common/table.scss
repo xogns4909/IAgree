@@ -1,0 +1,158 @@
+@import 'sass/abstracts/_variables_color';
+@import 'sass/abstracts/_mixins';
+
+table.custom-table {
+  border-collapse: collapse;
+  width: 100%;
+  height: auto;
+
+  tr {
+    border-bottom: 1px solid $basic-border-color;
+    width: 100%;
+
+    th {
+      @include font-container(1.25rem, 1.75rem, $subject-table-font-color);
+
+      height: 2.75rem;
+    }
+
+    td {
+      @include font-container(1rem, 1.375rem, $subject-table-font-color);
+
+      padding: 0.3125rem 0;
+      height: 2.75rem;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .title-heading {
+    padding-left: 1.5rem;
+    width: 50%;
+    min-width: 50%;
+    max-width: 86%;
+  }
+
+  .nickname-heading {
+    width: 6.5%;
+  }
+
+  .writedate-heading {
+    width: 8%;
+  }
+
+  .view-heading {
+    width: 6%;
+    text-align: center;
+  }
+
+  .title-data {
+    padding-left: 1.5rem;
+    width: 50%;
+    min-width: 50%;
+    max-width: 86%;
+    text-align: left;
+
+    .customerservice-reviewCount {
+      margin-left: 6px;
+      color: $basic-color;
+    }
+  }
+
+  .nickname-data {
+    width: 6.5%;
+    text-align: center;
+  }
+
+  .writedate-data {
+    width: 8%;
+    text-align: center;
+  }
+
+  .view-data {
+    width: 6%;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    td {
+      @include font-container(1rem, 1.375rem, $subject-table-font-color);
+
+      padding: 5px 0;
+    }
+    .notice-data {
+      .title-heading {
+        padding-left: 1rem;
+        width: 50%;
+        min-width: 50%;
+        max-width: 86%;
+      }
+
+      .nickname-heading {
+        width: 6.5%;
+      }
+
+      .writedate-heading {
+        width: 8%;
+      }
+
+      .view-heading {
+        width: 6%;
+        text-align: center;
+      }
+
+      .title-data {
+        padding-left: 1rem;
+        width: 70%;
+        text-align: left;
+      }
+
+      .nickname-data {
+        width: 6.5%;
+        text-align: center;
+      }
+
+      .writedate-data {
+        width: 8%;
+        text-align: center;
+      }
+
+      .view-data {
+        width: 6%;
+        text-align: center;
+      }
+    }
+  }
+
+  .customer-service-data {
+    @include flex-container(column, flex-start, center);
+
+    width: 100%;
+
+    .title-data {
+      padding: 0.3125rem 0.625rem;
+      width: 100%;
+      height: 100%;
+      min-height: 1.4375rem;
+      max-height: 2.5rem;
+      max-width: 100%;
+      text-align: left;
+    }
+
+    .combined-data {
+      @include flex-container(row, space-between, center);
+      @include font-container(13px, 1rem, $sub-font-color);
+
+      padding: 0 0.625rem;
+      width: 100%;
+      height: auto;
+
+      .write-data-wrap {
+        & > span {
+          padding-right: 0.625rem;
+        }
+      }
+    }
+  }
+}

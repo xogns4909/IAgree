@@ -1,0 +1,24 @@
+$basic-color: #ff611d;
+$basic-border-color: #bcbcbc;
+$sub-color: #5a5a5a;
+
+.restaurant-detail-bottom-menu-heart-div {
+    position: relative;
+    bottom: 7.3rem;
+    left: 3.1rem;
+    width: 4rem;
+    border: 1px solid $basic-color;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .restaurant-detail-bottom-menu-heart {
+      margin: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: $basic-color;
+    }
+  }

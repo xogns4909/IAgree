@@ -1,0 +1,185 @@
+@import 'sass/abstracts/_variables_color.scss';
+@import 'sass/abstracts/_mixins.scss';
+@import 'sass/components/_buttons.scss';
+
+.signup-process-3-container {
+  h2 {
+    @include font-container(1.625rem, 2.313rem, $subject-font-color);
+
+    width: 100%;
+  }
+}
+
+.privacy-form {
+  @include flex-container(column, center, flex-start);
+
+  margin-top: 2.0625rem;
+  width: 100%;
+
+  .radio-wrap {
+    margin-bottom: 1.75rem;
+    width: 100%;
+    height: 1.375rem;
+
+    & > span {
+      @include font-container(1rem, 1.375rem, $content-font-color);
+
+      margin-right: 0.4375rem;
+      font-weight: 500;
+    }
+
+    & > label {
+      @include font-container(1rem, 1.3125rem, $content-font-color);
+
+      margin-left: 1.3125rem;
+      height: 100%;
+
+      input[type='radio'] {
+        appearance: none;
+      }
+
+      input[type='radio'] {
+        margin-left: 0.4375rem;
+        border: 1px solid $basic-border-color;
+        border-radius: 15px;
+        width: 0.875rem;
+        height: 0.875rem;
+        vertical-align: middle;
+        cursor: pointer;
+      }
+
+      input[type='radio']:checked {
+        background-color: $basic-color;
+      }
+    }
+  }
+
+  & > label {
+    @include flex-container(column, center, flex-start);
+    @include font-container(1rem, 1.375rem, $content-font-color);
+
+    margin-bottom: 0.3125rem;
+    width: 100%;
+    font-weight: 500;
+  }
+
+  .privacy-input-wrap {
+    @include flex-container(row, center, center);
+    margin-top: 6px;
+    width: 100%;
+    height: 54px;
+
+    & > input {
+      @include font-container(1rem, 1.3125rem, $subject-font-color);
+      border: 1px solid $basic-border-color;
+      border-radius: 3px;
+      padding: 0px 1.1875rem;
+      width: calc(100% - 6.625rem);
+      height: 100%;
+
+      &::placeholder {
+        @include font-container(1rem, 1.3125rem, $sub-font-color);
+      }
+    }
+
+    .id-input {
+      border-right: none;
+      border-radius: 0.1875rem 0 0 0.1875rem;
+      width: calc((100% - 6.625rem) / 2);
+    }
+
+    .email-input {
+      @include font-container(1rem, 1.3125rem, $place-holder-color);
+
+      border-left: none;
+      border-radius: 0 0.1875rem 0.1875rem 0;
+      width: calc((100% - 6.625rem) / 2);
+    }
+
+    .signup-email-activate-button {
+      @include activate-button(6.625rem);
+      @include font-container(0.75rem, 1.0625rem, white);
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .signup-email-disabled-button {
+      @include disabled-button(6.625rem);
+      @include font-container(0.75rem, 1.0625rem, white);
+    }
+
+    @media screen and (max-width: 1040px) {
+      & > input {
+        width: calc(100% - 4.8125rem);
+
+        &::placeholder {
+          @include font-container(1rem, 1.3125rem, $sub-font-color);
+        }
+      }
+
+      .id-input {
+        width: calc((100% - 4.8125rem) / 2);
+      }
+
+      .email-input {
+        width: calc((100% - 4.8125rem) / 2);
+      }
+
+      .signup-email-activate-button {
+        @include activate-button(4.8125rem);
+      }
+
+      .signup-email-disabled-button {
+        @include disabled-button(4.8125rem);
+      }
+    }
+  }
+
+  & > p {
+    @include font-container(0.75rem, 1rem, $basic-color);
+
+    margin-top: 0.375rem;
+  }
+}
+
+.select-wrap {
+  @include flex-container(row, space-between, center);
+  margin-top: 1.0625rem;
+  width: 100%;
+
+  & > label {
+    @include flex-container(column, center, flex-start);
+    width: 47.5%;
+
+    & > select {
+      @include font-container(1rem, 1.3125rem, $sub-font-color);
+
+      margin: 0.375rem 0 1.4375rem 0;
+      border: 1px solid $basic-border-color;
+      border-radius: 3px;
+      padding-left: 1rem;
+      width: 100%;
+      height: 3.375rem;
+    }
+  }
+}
+
+.signup-activate-button {
+  @include activate-button($height: 3.375rem);
+  @include font-container(1rem, 1.375rem, white);
+
+  margin: 1.9375rem 0 2.9375rem 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.signup-disabled-button {
+  @include disabled-button($height: 3.375rem);
+  @include font-container(1rem, 1.375rem, white);
+
+  margin: 1.9375rem 0 2.9375rem 0;
+}

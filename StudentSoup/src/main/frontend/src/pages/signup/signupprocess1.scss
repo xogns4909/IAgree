@@ -1,0 +1,70 @@
+@import 'sass/abstracts/_variables_color';
+@import 'sass/abstracts/_mixins';
+@import 'sass/components/_buttons';
+
+.signup-process-1-container {
+  h2 {
+    @include font-container(1.625rem, 2.313rem, $subject-font-color);
+
+    margin-bottom: 2.875rem;
+    width: 100%;
+  }
+
+  .terms-all-wrap {
+    @include flex-container(row, flex-start, center);
+    @include font-container(1rem, 1.3125rem, $content-font-color);
+
+    width: 100%;
+    height: 1.3125rem;
+
+    & > input {
+      appearance: none;
+      margin-right: 13px;
+      border: 1px solid #ababab;
+      border-radius: 2px;
+      width: 20px;
+      height: 20px;
+
+      &:checked {
+        background-image: url('./../../assets/images/signup_check_white.png');
+        background-size: 0.6875rem 0.4375rem;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-color: $basic-color;
+      }
+    }
+  }
+
+  .terms-conditions-container {
+    @include flex-container(column, center, flex-start);
+
+    margin-top: 3.0625rem;
+    border-top: 1px solid #d9d9d9;
+    width: 100%;
+  }
+
+  .caution-sentence {
+    @include font-container(0.75rem, 1rem, $sub-font-color);
+
+    padding: 1.5rem 1.5625rem 0 1.5625rem;
+    width: 100%;
+  }
+
+  .signup-activate-button {
+    @include activate-button($height: 3.375rem);
+    @include font-container(1rem, 1.375rem, white);
+
+    margin-bottom: 4.0625rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .signup-disabled-button {
+    @include disabled-button($height: 3.375rem);
+    @include font-container(1rem, 1.375rem, white);
+
+    margin-bottom: 4.0625rem;
+  }
+}

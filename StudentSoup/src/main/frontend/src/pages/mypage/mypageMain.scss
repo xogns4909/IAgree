@@ -1,0 +1,502 @@
+/* 데스크탑 해상도 */
+.mypagemain-container {
+  height: auto;
+  min-height: 120vh;
+  background: white;
+  .mypagemain-banner {
+    height: 20rem;
+    background: #b0b0b0;
+  }
+  .mypagemain-usercontainer {
+    display: flex;
+    flex-direction: row;
+    .mypagemain-userinfo {
+      position: relative;
+      bottom: 7.5rem;
+      left: 10%;
+      width: 25rem;
+      height: 28rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #ffffff;
+      border: 1px solid #e1e1e1;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+      border-radius: 5px;
+      .mypagemain-img {
+        width: 8.5rem;
+        height: 8.5rem;
+        margin-top: 10%;
+        border-radius: 50%;
+      }
+      .hover-text {
+        display: block;
+        position: relative;
+        bottom: 5rem;
+        left: 1.3rem;
+        color: black;
+        z-index: -1;
+        font-weight: 400;
+        font-size: 20px;
+      }
+      .mypagemain-imgbox {
+        height: 148px;
+      }
+      .mypagemain-imgbox:hover .mypagemain-img {
+        filter: brightness(70%);
+      }
+      .mypagemain-imgbox:hover .hover-text {
+        z-index: 0;
+      }
+      .mypagemain-username {
+        margin-top: 5%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 39px;
+        display: flex;
+        align-items: center;
+
+        color: #353535;
+      }
+      .mypagemain-schoolname {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        align-items: center;
+
+        color: #8d8d8d;
+        margin-top: 5%;
+      }
+      .mypagemain-schoolskill {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        align-items: center;
+
+        color: #8d8d8d;
+        margin-top: 2%;
+      }
+      .mypagemain-schooltext {
+        padding-left: 0.7rem;
+      }
+      .mypagemain-editprofile {
+        background: #ff661d;
+        border-radius: 11px;
+        border: none;
+        width: 16rem;
+        height: 2.6rem;
+        margin-top: 2rem;
+        font-weight: 400;
+        line-height: 21px;
+        font-size: 15px;
+        color: #ffffff;
+
+        &[disabled] {
+          display: none;
+        }
+      }
+      .mypagemain-date {
+        margin-top: 2.4rem;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+
+        color: #8d8d8d;
+      }
+    }
+    .mypagemain-contents {
+      width: 100%;
+      height: auto;
+      padding-left: 12%;
+      .mypagemain-boardcontainer {
+        width: 80%;
+        height: auto;
+        margin-top: 2rem;
+        margin-bottom: 3.3rem;
+        .mypagemain-boardmain {
+          display: flex;
+          justify-content: space-between;
+          .mypagemain-boardmainname {
+            font-size: 30px;
+            font-weight: 400;
+          }
+          .mypagemain-boardallview {
+            font-size: 17px;
+            font-weight: 400;
+            color: #b4b4b4;
+            padding-top: 1rem;
+          }
+          .mypagemain-boardallview:hover {
+            color: #ff661d;
+            cursor: pointer;
+          }
+        }
+      }
+      .mypagemain-boardtable {
+        width: 100%;
+        border-top: 3px solid #b4b4b4;
+        border-collapse: collapse;
+      }
+      .mypagemain-boardtable th {
+        border-bottom: 1px solid #b4b4b4;
+        padding: 1rem 0 1rem 0;
+      }
+
+      .mypagemain-boardtable td {
+        border-bottom: 1px solid #b4b4b4;
+        text-align: center;
+        padding: 1rem 0 1rem 0;
+      }
+    }
+  }
+}
+
+/* 테블릿 해상도 */
+
+.tablet-mypagemain-container {
+  height: auto;
+  min-height: 100vh;
+  background: white;
+  .tablet-mypagemain-banner {
+    height: 20rem;
+    background: #b0b0b0;
+  }
+  .tablet-mypagemain-usercontainer {
+    display: flex;
+    flex-direction: row;
+    .tablet-mypagemain-userinfo {
+      position: absolute;
+      top: 25rem;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      max-width: 25rem;
+      height: 28rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #ffffff;
+      border: 1px solid #e1e1e1;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+      border-radius: 5px;
+      .tablet-mypagemain-img {
+        width: 8.5rem;
+        height: 8.5rem;
+        margin-top: 1.5rem;
+        border-radius: 50%;
+      }
+      .tablet-hover-text {
+        display: block;
+        position: relative;
+        bottom: 5rem;
+        left: 1.3rem;
+        color: black;
+        z-index: -1;
+        font-weight: 400;
+        font-size: 20px;
+      }
+      .tablet-mypagemain-imgbox {
+        height: 148px;
+      }
+      .tablet-mypagemain-imgbox:hover .tablet-mypagemain-img {
+        filter: brightness(70%);
+      }
+      .tablet-mypagemain-imgbox:hover .tablet-hover-text {
+        z-index: 0;
+      }
+      .tablet-mypagemain-username {
+        margin-top: 5%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 39px;
+        display: flex;
+        align-items: center;
+
+        color: #353535;
+      }
+      .tablet-mypagemain-schoolname {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        align-items: center;
+
+        color: #8d8d8d;
+        margin-top: 5%;
+      }
+      .tablet-mypagemain-schoolskill {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        align-items: center;
+
+        color: #8d8d8d;
+        margin-top: 2%;
+      }
+      .tablet-mypagemain-schooltext {
+        padding-left: 0.7rem;
+      }
+      .tablet-mypagemain-editprofile {
+        background: #ff661d;
+        border-radius: 11px;
+        border: none;
+        width: 16rem;
+        height: 2.6rem;
+        margin-top: 2rem;
+        font-weight: 400;
+        line-height: 21px;
+        font-size: 15px;
+        color: #ffffff;
+        &[disabled] {
+          display: none;
+        }
+      }
+      .tablet-mypagemain-date {
+        margin-top: 2.4rem;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+
+        color: #8d8d8d;
+      }
+    }
+    .tablet-mypagemain-contents {
+      width: 100%;
+      margin-top: 20rem;
+      .tablet-mypagemain-boardcontainer {
+        width: 100%;
+        height: auto;
+        margin-top: 5rem;
+        margin-bottom: 3.3rem;
+        .tablet-mypagemain-boardmain {
+          margin: auto;
+          display: flex;
+          justify-content: space-between;
+          width: 80%;
+          .tablet-mypagemain-boardmainname {
+            font-size: 30px;
+            font-weight: 400;
+          }
+          .tablet-mypagemain-boardallview {
+            font-size: 17px;
+            font-weight: 400;
+            color: #b4b4b4;
+            padding-top: 1rem;
+          }
+          .tablet-mypagemain-boardallview:hover {
+            color: #ff661d;
+            cursor: pointer;
+          }
+        }
+      }
+      .tablet-mypagemain-boardtable {
+        margin: auto;
+        width: 80%;
+        border-top: 3px solid #b4b4b4;
+        border-collapse: collapse;
+      }
+      .tablet-mypagemain-boardtable th {
+        border-bottom: 1px solid #b4b4b4;
+        padding: 1rem 0 1rem 0;
+      }
+
+      .tablet-mypagemain-boardtable td {
+        border-bottom: 1px solid #b4b4b4;
+        text-align: center;
+        padding: 1rem 0 1rem 0;
+      }
+    }
+  }
+}
+
+/* 모바일 해상도 */
+
+.mobile-mypagemain-container {
+  height: auto;
+  background: white;
+  .mobile-mypagemain-banner {
+    height: 20rem;
+    background: #b0b0b0;
+  }
+  .mobile-mypagemain-usercontainer {
+    display: flex;
+    flex-direction: column;
+    .mobile-mypagemain-userinfo {
+      position: absolute;
+      top: 25rem;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      max-width: 20rem;
+      height: 28rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #ffffff;
+      border: 1px solid #e1e1e1;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+      border-radius: 5px;
+      .mobile-mypagemain-img {
+        width: 8.5rem;
+        height: 8.5rem;
+        margin-top: 10%;
+        border-radius: 50%;
+      }
+      .mobile-hover-text {
+        display: block;
+        position: relative;
+        bottom: 5rem;
+        left: 1.3rem;
+        color: black;
+        z-index: -1;
+        font-weight: 400;
+        font-size: 20px;
+      }
+      .mobile-mypagemain-imgbox {
+        height: 148px;
+      }
+      .mobile-mypagemain-imgbox:hover .mobile-mypagemain-img {
+        filter: brightness(70%);
+      }
+      .mobile-mypagemain-imgbox:hover .mobile-hover-text {
+        z-index: 0;
+      }
+      .mobile-mypagemain-username {
+        margin-top: 5%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 39px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+
+        color: #353535;
+      }
+      .mobile-mypagemain-schoolname {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        align-items: center;
+
+        color: #8d8d8d;
+        margin-top: 5%;
+      }
+      .mobile-mypagemain-schoolskill {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        align-items: center;
+
+        color: #8d8d8d;
+        margin-top: 2%;
+      }
+      .mobile-mypagemain-schooltext {
+        padding-left: 0.7rem;
+      }
+      .mobile-mypagemain-editprofile {
+        background: #ff661d;
+        border-radius: 11px;
+        border: none;
+        width: 60%;
+        height: 2.6rem;
+        margin-top: 2rem;
+        font-weight: 400;
+        line-height: 21px;
+        font-size: 15px;
+        color: #ffffff;
+        &[disabled] {
+          display: none;
+        }
+      }
+      .mobile-mypagemain-date {
+        margin-top: 2.4rem;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+
+        color: #8d8d8d;
+      }
+    }
+  }
+  .mobile-mypagemain-contents {
+    width: 100%;
+    margin-top: 18rem;
+    .mobile-mypagemain-boardcontainer {
+      width: 100%;
+      height: auto;
+      margin-top: 5rem;
+      margin-bottom: 3.3rem;
+      .mobile-mypagemain-boardmain {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        .mobile-mypagemain-boardmainname {
+          font-size: 30px;
+          font-weight: 400;
+        }
+        .mobile-mypagemain-boardallview {
+          font-size: 17px;
+          font-weight: 400;
+          color: #b4b4b4;
+          padding-top: 1rem;
+        }
+        .mobile-mypagemain-boardallview:hover {
+          color: #ff661d;
+          cursor: pointer;
+        }
+      }
+      .mobile-mypagemain-boardtable {
+        margin: auto;
+        width: 90%;
+        border-top: 3px solid #b4b4b4;
+        border-collapse: collapse;
+      }
+      .mobile-mypagemain-boardtable th {
+        border-bottom: 1px solid #b4b4b4;
+        padding: 1rem 0 1rem 0;
+      }
+
+      .mobile-mypagemain-boardtable td {
+        border-bottom: 1px solid #b4b4b4;
+        text-align: center;
+        padding: 1rem 0 1rem 0;
+      }
+    }
+  }
+}
+
+// default
+.password-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.password-form label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.password-form input {
+  width: 80%;
+  padding: 8px;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

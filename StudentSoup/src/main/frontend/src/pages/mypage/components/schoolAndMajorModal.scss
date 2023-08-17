@@ -1,0 +1,231 @@
+.modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+
+  .modal,
+  .modalOverlay {
+    opacity: 0;
+  }
+
+  &.active {
+    .modal {
+      animation: fadeInOut 0.3s ease-in-out forwards;
+    }
+    .modalOverlay {
+      animation: fadeIn 0.3s ease-in-out forwards;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.modalOverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.modal {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 35rem;
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.modal-header {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-contents {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  span {
+    font-size: 1.3rem;
+    margin-top: 12px;
+  }
+}
+
+.modal-labelname {
+  font-size: 1.125rem;
+  margin-top: 15px;
+  margin-right: 1rem;
+}
+.modal-selectbar {
+  box-sizing: border-box;
+  transition: border-color 0.1s, box-shadow 0.1s;
+  border: 1px solid #d9d9d9;
+  border-radius: 0.1875em;
+  background: rgba(0, 0, 0, 0);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06), 0 0 0 3px rgba(0, 0, 0, 0);
+  color: inherit;
+  font-size: 1.125em;
+  padding-left: 10px;
+  font-size: 1.125rem;
+  width: 18rem;
+  height: 3rem;
+}
+.modal-inputtext {
+  padding-left: 10px;
+  box-sizing: border-box;
+  width: auto;
+  height: 3rem;
+  transition: border-color 0.1s, box-shadow 0.1s;
+  border: 1px solid #d9d9d9;
+  border-radius: 0.1875em;
+  background: rgba(0, 0, 0, 0);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06), 0 0 0 3px rgba(0, 0, 0, 0);
+  color: inherit;
+  font-size: 1.125rem;
+}
+.modal-verifybutton {
+  width: 4rem;
+  height: 3rem;
+  border: 0;
+  border-radius: 0.25em;
+  background: initial;
+  background-color: #ff611d;
+  color: #fff;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+.modal-verifybutton.disabled {
+  background-color: #ccc;
+}
+.modal-verificationmessage {
+  color: #ff611d;
+  font-size: 15px;
+  margin-top: 8px;
+}
+.modal-email-sending-message {
+  color: #ff611d;
+  font-size: 15px;
+  margin-top: 8px;
+}
+.modal-verifybutton:disabled {
+  background-color: #ccc;
+}
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  .modal-footer-editbutton {
+    width: 4rem;
+    height: 2.5rem;
+    border: 0;
+    border-radius: 0.25em;
+    background: initial;
+    background-color: #ff611d;
+    color: #fff;
+    font-size: 1em;
+    margin-right: 1rem;
+    font-size: 1em;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(90%);
+    }
+
+    &.disabled {
+      cursor: default;
+      background-color: #ccc;
+
+      &:hover {
+        filter: unset;
+        background-color: #ccc;
+      }
+    }
+  }
+  .modal-footer-closebutton {
+    width: 4rem;
+    height: 2.5rem;
+    border: 0;
+    border-radius: 0.25em;
+    background: initial;
+    background-color: #6e7881;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    &:hover {
+      filter: brightness(80%);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal {
+    width: 90%;
+    padding-bottom: 10rem;
+  }
+  .modal-contents {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-labelname {
+    width: 20%;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+  .modal-emaildomain {
+    width: auto;
+    height: 3rem;
+  }
+  .modal-selectbar {
+    width: 100%;
+  }
+  .modal-labelname {
+    width: 100%;
+    text-align: center;
+  }
+}

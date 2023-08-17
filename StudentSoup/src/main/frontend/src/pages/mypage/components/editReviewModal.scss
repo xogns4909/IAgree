@@ -1,0 +1,89 @@
+.edit-review-modal {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 46.5rem;
+  height: 33.9rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  .edit-review-modal-helpcontext {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 1.5rem 0 1.5rem 0;
+    color: #b7b7b7;
+  }
+
+  textarea {
+    resize: none;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+
+  .edit-review-modal-star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .edit-review-modal-textarea {
+    width: 43rem;
+    height: 13rem;
+  }
+
+  .edit-review-modal-buttonline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8rem;
+  }
+  .edit-review-modal-cancel {
+    font-size: 1.2rem;
+    width: 21rem;
+    height: 3.8rem;
+    border-radius: 5px;
+    border: #cccccc;
+    border: 1px solid #cccccc;
+    color: #9f9f9f;
+    background-color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    &:hover {
+      background-color: #cccccc;
+      color: black;
+    }
+  }
+  .edit-review-modal-complete {
+    font-size: 1.2rem;
+    background-color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    border: #ff611d;
+    border: 1px solid #ff611d;
+    width: 21rem;
+    height: 3.8rem;
+    color: #ff611d;
+    margin-left: 1.5rem;
+    &:hover {
+      background-color: #ff611d;
+      color: white;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .edit-review-modal {
+    width: 90%;
+  }
+}

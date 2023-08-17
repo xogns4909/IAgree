@@ -1,0 +1,595 @@
+$basic-color: #ff611d;
+$text-color: #000;
+
+.restaurant-navbar-items {
+  background-color: #ffffff;
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #ff661d;
+  width: 100%;
+  height: 75px;
+  padding-left: 30px;
+  z-index: 9999;
+  .restaurant-navbar-logo-links {
+    text-decoration: none;
+    margin-top: 5px;
+  }
+  .restaurant-navbar-logo {
+    font-style: normal;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out;
+    font-style: normal;
+    &:hover {
+      color: #000;
+      transform: translate(-3px, -3px);
+      text-shadow: 0.5px 0.5px 0 #888, 1px 1px 0 #888, 1.5px 1.5px 0 #888, 2px 2px 0 #888,
+        2.5px 2.5px 0 #888, 3px 3px 0 #888, 3.5px 3.5px 0 #888, 4px 4px 0 #888, 4.5px 4.5px 0 #888,
+        5px 5px 0 #888;
+    }
+  }
+  .restaurant-navbar-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .restaurant-navbar-input-div {
+    position: relative;
+    width: 385px;
+    height: 44px;
+
+    .restaurant-navbar-input {
+      width: 385px;
+      height: 44px;
+      padding-left: 15px;
+      padding-right: 45px;
+      margin-left: 30px;
+      border: 1px solid $basic-color;
+      border-radius: 5px;
+
+      &:focus {
+        color: $text-color;
+        border: 1px solid $basic-color;
+        outline-color: $basic-color;
+      }
+    }
+
+    .restaurant-navbar-input::placeholder {
+      color: $basic-color;
+    }
+
+    .restaurant-navbar-img {
+      position: absolute;
+      top: 10px;
+      right: -20px;
+      width: 22px;
+      height: 22px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .search-school-list {
+    position: absolute;
+    z-index: 10;
+    top: 44px;
+    left: 30px;
+    border: 1px solid #ff611d;
+    border-radius: 4px;
+    padding: 0.7rem 0 0.7rem 1rem;
+    width: 100%;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 400;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  .restaurant-nav-menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    text-decoration: none;
+
+    .restaurant-nav-links {
+      color: #000;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 400;
+      white-space: nowrap;
+      width: 150px;
+      height: 75px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        font-style: normal;
+        justify-content: center;
+      }
+      &:hover {
+        cursor: pointer;
+        background-color: #ff661d;
+        color: white;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+
+  .restaurant-navbar-logout-div {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    white-space: nowrap;
+    width: 150px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    i {
+      display: flex;
+      flex-direction: column;
+      font-style: normal;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      border-radius: 100%;
+      position: relative;
+      top: 0.725rem;
+    }
+
+    .restaurant-navbar-hover-text {
+      display: flex;
+      position: relative;
+      bottom: 1.5rem;
+      color: #fff;
+      font-size: 20px;
+      z-index: -1;
+    }
+
+    &:hover {
+      background-color: #bcbcbc;
+      transition: all 0.3s ease-in-out;
+
+      img {
+        border-radius: 100%;
+        position: relative;
+        top: 0.725rem;
+        filter: brightness(70%);
+      }
+
+      .restaurant-navbar-hover-text {
+        display: flex;
+        position: relative;
+        bottom: 1.5rem;
+        color: #000;
+        font-size: 20px;
+        z-index: 0;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    .restaurant-navbar-logout {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+.tablet-restaurant-navbar-items {
+  background-color: #ffffff;
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #ff661d;
+  width: 100%;
+  height: 75px;
+  padding-left: 30px;
+  padding-right: 30px;
+  z-index: 9999;
+  .restaurant-navbar-logo-links {
+    text-decoration: none;
+    margin-top: 5px;
+  }
+  .restaurant-navbar-logo {
+    font-style: normal;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out;
+    font-style: normal;
+    &:hover {
+      color: #000;
+      transform: translate(-3px, -3px);
+      text-shadow: 0.5px 0.5px 0 #888, 1px 1px 0 #888, 1.5px 1.5px 0 #888, 2px 2px 0 #888,
+        2.5px 2.5px 0 #888, 3px 3px 0 #888, 3.5px 3.5px 0 #888, 4px 4px 0 #888, 4.5px 4.5px 0 #888,
+        5px 5px 0 #888;
+    }
+  }
+  .tablet-restaurant-nav-menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    text-decoration: none;
+    justify-content: flex-start;
+
+    .tablet-restaurant-nav-menu-icon {
+      color: #000;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 400;
+      white-space: nowrap;
+      width: calc(30px + 1.3vw);
+      height: calc(26px + 1vh);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      font-style: normal;
+    }
+
+    .tablet-restaurant-nav-menu-profile {
+      border-radius: 50px;
+      color: #000;
+      white-space: nowrap;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+  .tablet-restaurant-nav-menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: white;
+    width: 94%;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    right: -100%;
+    opacity: 0;
+    align-items: stretch;
+    padding: 25px;
+    list-style: none;
+    margin: 0;
+    transition: 0.5s ease-in-out;
+    border-radius: 15px;
+    font-style: normal;
+
+    .tablet-restaurant-navbar-input-div {
+      position: relative;
+      padding: 0 6px;
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .tablet-restaurant-navbar-input {
+        width: 100%;
+        height: 44px;
+        padding-left: 15px;
+        padding-right: 40px;
+        margin-bottom: 16px;
+        border: 1px solid $basic-color;
+        border-radius: 5px;
+
+        &:focus {
+          color: $text-color;
+          border: 1px solid $basic-color;
+          outline-color: $basic-color;
+        }
+      }
+
+      .tablet-restaurant-navbar-input::placeholder {
+        color: $basic-color;
+      }
+
+      .tablet-restaurant-navbar-img {
+        position: absolute;
+        top: 10px;
+        right: 18px;
+        width: 22px;
+        height: 22px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .tablet-search-school-list {
+      position: absolute;
+      z-index: 10;
+      top: 44px;
+      left: 7px;
+      border: 1px solid #ff611d;
+      border-radius: 4px;
+      padding: 0.7rem 0 0.7rem 1rem;
+      width: 98.4%;
+      background-color: white;
+      font-size: 14px;
+      font-weight: 400;
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+
+    .tablet-restaurant-nav-list {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  }
+
+  .tablet-restaurant-nav-menu-list.active {
+    right: 3%;
+    top: 130%;
+    opacity: 1;
+    z-index: 9999;
+    transition: 0.5s ease-in-out;
+    border: 1px solid #bcbcbc;
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .tablet-restaurant-nav-link {
+      text-decoration: none;
+    }
+
+    .tablet-restaurant-nav-list {
+      font-size: 1.875rem;
+      font-style: normal;
+      display: flex;
+      padding: 10px;
+      justify-content: space-between;
+
+      i {
+        font-style: normal;
+        font-size: calc(24px + 1vw);
+        color: #000;
+      }
+
+      .tablet-restaurant-nav-icons {
+        height: calc(24px + 1vw);
+        color: #000;
+      }
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: #000;
+      }
+    }
+  }
+}
+
+.mobile-restaurant-navbar-items {
+  background-color: #ffffff;
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #ff661d;
+  width: 100%;
+  height: 75px;
+  padding-left: 30px;
+  padding-right: 30px;
+  z-index: 9999;
+  .restaurant-navbar-logo-links {
+    text-decoration: none;
+    margin-top: 5px;
+  }
+  .restaurant-navbar-logo {
+    font-style: normal;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out;
+    font-style: normal;
+    &:hover {
+      color: #000;
+      transform: translate(-3px, -3px);
+      text-shadow: 0.5px 0.5px 0 #888, 1px 1px 0 #888, 1.5px 1.5px 0 #888, 2px 2px 0 #888,
+        2.5px 2.5px 0 #888, 3px 3px 0 #888, 3.5px 3.5px 0 #888, 4px 4px 0 #888, 4.5px 4.5px 0 #888,
+        5px 5px 0 #888;
+    }
+  }
+  .mobile-restaurant-nav-menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    text-decoration: none;
+    justify-content: flex-start;
+
+    .mobile-restaurant-nav-menu-icon {
+      color: #000;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 400;
+      white-space: nowrap;
+      width: calc(30px + 1.3vw);
+      height: calc(26px + 1vh);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      font-style: normal;
+    }
+
+    .mobile-restaurant-nav-menu-profile {
+      border-radius: 50px;
+      color: #000;
+      white-space: nowrap;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+  .mobile-restaurant-nav-menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: white;
+    width: 94%;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    right: -100%;
+    opacity: 0;
+    align-items: stretch;
+    padding: 25px;
+    list-style: none;
+    margin: 0;
+    transition: 0.5s ease-in-out;
+    border-radius: 15px;
+    font-style: normal;
+
+    .mobile-restaurant-navbar-input-div {
+      position: relative;
+      padding: 0 6px;
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .mobile-restaurant-navbar-input {
+        width: 100%;
+        height: 44px;
+        padding-left: 15px;
+        padding-right: 40px;
+        margin-bottom: 16px;
+        border: 1px solid $basic-color;
+        border-radius: 5px;
+
+        &:focus {
+          color: $text-color;
+          border: 1px solid $basic-color;
+          outline-color: $basic-color;
+        }
+      }
+      .mobile-restaurant-navbar-input::placeholder {
+        color: $basic-color;
+      }
+
+      .mobile-restaurant-navbar-img {
+        position: absolute;
+        top: 10px;
+        right: 18px;
+        width: 22px;
+        height: 22px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .mobile-search-school-list {
+      position: absolute;
+      z-index: 10;
+      top: 44px;
+      left: 7px;
+      border: 1px solid #ff611d;
+      border-radius: 4px;
+      padding: 0.7rem 0 0.7rem 1rem;
+      width: 97%;
+      background-color: white;
+      font-size: 14px;
+      font-weight: 400;
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+    .mobile-restaurant-nav-list {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  }
+
+  .mobile-restaurant-nav-menu-list.active {
+    right: 3%;
+    top: 130%;
+    opacity: 1;
+    z-index: 9999;
+    transition: 0.5s ease-in-out;
+    border: 1px solid #bcbcbc;
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .mobile-restaurant-nav-link {
+      text-decoration: none;
+    }
+
+    .mobile-restaurant-nav-list {
+      font-size: 1.875rem;
+      font-style: normal;
+      display: flex;
+      padding: 10px;
+      justify-content: space-between;
+
+      i {
+        font-style: normal;
+        font-size: calc(24px + 1vw);
+        color: #000;
+      }
+
+      .mobile-restaurant-nav-icons {
+        height: calc(24px + 1vw);
+        color: #000;
+      }
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: #000;
+      }
+    }
+  }
+}

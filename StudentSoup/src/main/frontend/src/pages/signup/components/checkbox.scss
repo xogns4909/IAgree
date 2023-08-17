@@ -1,0 +1,42 @@
+@import 'sass/abstracts/_variables_color';
+@import 'sass/abstracts/_mixins';
+
+.terms-wrap {
+  @include flex-container(row, flex-start, center);
+  @include font-container(16px, 22px, $content-font-color);
+
+  margin: 0.3125rem 0;
+  width: 100%;
+  height: 100%;
+  min-height: 2.4375rem;
+
+  & > input {
+    appearance: none;
+    background-image: url('./../../../assets/images/signup_uncheck.png');
+    background-size: 11px 7px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    margin-right: 11px;
+    width: 20px;
+    height: 20px;
+
+    &:checked {
+      background-image: url('./../../../assets/images/signup_check.png');
+      background-size: 11px 7px;
+      background-position: 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  span {
+    @include font-container(16px, 22px, $content-font-color);
+
+    font-weight: 500;
+    margin-right: 6px;
+    width: 40px;
+  }
+
+  div {
+    width: calc(100% - 40px - 6px - 11px - 20px);
+  }
+}

@@ -1,0 +1,178 @@
+.mypagecontents-container {
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 10.5rem;
+  .mypagecontents-bordercontainer {
+    width: 95%;
+    height: 3.2rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    .mypagecontents-borderbuttonboard {
+      padding-top: 1rem;
+      text-align: center;
+      width: 50%;
+      height: 3.2rem;
+      border: 1px solid #bcbcbc;
+      border-radius: 5px 0px 0px 5px;
+      cursor: pointer;
+    }
+    .mypagecontents-borderbuttonboardactive {
+      border: 2px solid #ff661d;
+    }
+    .mypagecontents-borderbuttonreply {
+      padding-top: 1rem;
+      text-align: center;
+      width: 50%;
+      height: 3.2rem;
+      border: 1px solid #bcbcbc;
+      border-radius: 0px 5px 5px 0px;
+      cursor: pointer;
+    }
+    .mypagecontents-borderbuttonreplyactive {
+      border: 2px solid #ff661d;
+    }
+  }
+  .mypagecontents-boardtable {
+    margin-top: 1.2rem;
+    width: 95%;
+    border-top: 3px solid #ff661d;
+    border-collapse: collapse;
+  }
+  .mypagecontents-boardtable th {
+    border-bottom: 1px solid #b4b4b4;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+  }
+  .mypagecontents-boardtable td {
+    border-bottom: 1px solid #b4b4b4;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+  }
+  .mypagecontents-pagenation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+  }
+}
+// tablet
+.tablet-mypagecontents-container {
+  width: 100%;
+  margin-top: 25rem;
+  margin-left: 2rem;
+  .tablet-mypagecontents-bordercontainer {
+    width: 95%;
+    height: 3.2rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    .tablet-mypagecontents-borderbuttonboard {
+      padding-top: 1rem;
+      text-align: center;
+      width: 50%;
+      height: 3.2rem;
+      border: 1px solid #bcbcbc;
+      border-radius: 5px 0px 0px 5px;
+      cursor: pointer;
+    }
+    .tablet-mypagecontents-borderbuttonboardactive {
+      border: 2px solid #ff661d;
+    }
+    .tablet-mypagecontents-borderbuttonreply {
+      padding-top: 1rem;
+      text-align: center;
+      width: 50%;
+      height: 3.2rem;
+      border: 1px solid #bcbcbc;
+      border-radius: 0px 5px 5px 0px;
+      cursor: pointer;
+    }
+    .tablet-mypagecontents-borderbuttonreplyactive {
+      border: 2px solid #ff661d;
+    }
+  }
+  .tablet-mypagecontents-boardtable {
+    margin-top: 1.2rem;
+    width: 95%;
+    border-top: 3px solid #ff661d;
+    border-collapse: collapse;
+  }
+  .tablet-mypagecontents-boardtable th {
+    border-bottom: 1px solid #b4b4b4;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+  }
+  .tablet-mypagecontents-boardtable td {
+    border-bottom: 1px solid #b4b4b4;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+  }
+  .tablet-mypagecontents-pagenation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin-bottom: 3rem;
+  }
+}
+//mobile
+.mobile-mypagecontents-container {
+  margin-top: 25rem;
+  margin-left: 1rem;
+  .mobile-mypagecontents-bordercontainer {
+    width: 95%;
+    height: 3.2rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    .mobile-mypagecontents-borderbuttonboard {
+      padding-top: 1rem;
+      text-align: center;
+      width: 50%;
+      height: 3.2rem;
+      border: 1px solid #bcbcbc;
+      border-radius: 5px 0px 0px 5px;
+      cursor: pointer;
+    }
+    .mobile-mypagecontents-borderbuttonboardactive {
+      border: 2px solid #ff661d;
+      cursor: pointer;
+    }
+    .mobile-mypagecontents-borderbuttonreply {
+      padding-top: 1rem;
+      text-align: center;
+      width: 50%;
+      height: 3.2rem;
+      border: 1px solid #bcbcbc;
+      border-radius: 0px 5px 5px 0px;
+      cursor: pointer;
+    }
+    .mobile-mypagecontents-borderbuttonreplyactive {
+      border: 2px solid #ff661d;
+    }
+  }
+  .mobile-mypagecontents-boardtable {
+    margin-top: 1.2rem;
+    width: 95%;
+    border-top: 3px solid #ff661d;
+    border-collapse: collapse;
+  }
+  .mobile-mypagecontents-boardtable th {
+    border-bottom: 1px solid #b4b4b4;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+  }
+  .mobile-mypagecontents-boardtable td {
+    border-bottom: 1px solid #b4b4b4;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+  }
+  .mobile-mypagecontents-pagenation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin-bottom: 3rem;
+  }
+}

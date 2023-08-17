@@ -1,0 +1,26 @@
+$basic-color: #ff611d;
+$basic-border-color: #bcbcbc;
+$text-color: #252525;
+$text-sub-color: #a8a8a8;
+
+.board-detail-bottom-reply-div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+
+  .board-detail-underline {
+    background-color: $basic-border-color;
+    height: 1px;
+  }
+}
+
+.board-detail-mobile-bottom-reply-div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+
+  .board-detail-mobile-underline {
+    background-color: $basic-border-color;
+    height: 1px;
+  }
+}

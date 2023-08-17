@@ -1,0 +1,99 @@
+@import './../../assets/scss/abstracts/_variables_color';
+@import './../../assets/scss/abstracts/_mixins';
+@import './../../assets/scss/components/buttons';
+
+.footer-container {
+  @include flex-container(column, space-between, flex-start);
+
+  padding: 59px 159px 40px 159px;
+  height: auto;
+  min-height: 17.3125rem;
+  background-color: $footer-background-color;
+
+  & > div {
+    width: 100%;
+
+    & > span {
+      @include font-container(16px, 21px, $footer-font-color);
+
+      width: auto;
+    }
+  }
+
+  & > span {
+    @include font-container(16px, 21px, $footer-font-color);
+
+    width: auto;
+  }
+
+  .policy-wrap {
+    & > span {
+      border-right: 2px solid $footer-font-color;
+      padding: 0 10px;
+    }
+
+    span:first-child {
+      padding-left: 0px;
+    }
+
+    span:last-child {
+      border-right: none;
+    }
+  }
+
+  .footer-information {
+    & > span {
+      padding: 0 10px;
+    }
+
+    span:first-child {
+      padding-left: 0px;
+    }
+
+    span:last-child {
+      border-right: none;
+    }
+  }
+
+  .footer-language {
+    @include flex-container(row, flex-end, center);
+
+    flex-wrap: wrap;
+    & > span {
+      font-weight: 700;
+      height: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 1041px) {
+  .footer-container {
+    padding: 50px 100px;
+
+    & > div {
+      & > span {
+        @include font-container(14px, 21px, $footer-font-color);
+      }
+    }
+
+    & > span {
+      @include font-container(14px, 21px, $footer-font-color);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    padding: 50px 25px;
+
+    & > div {
+      & > span {
+        @include font-container(14px, 21px, $footer-font-color);
+      }
+    }
+
+    & > span {
+      @include font-container(14px, 21px, $footer-font-color);
+    }
+  }
+}

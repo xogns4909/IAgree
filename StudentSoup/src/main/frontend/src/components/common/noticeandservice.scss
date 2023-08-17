@@ -1,0 +1,56 @@
+@import 'sass/abstracts/_variables_color.scss';
+@import 'sass/abstracts/_mixins.scss';
+@import 'sass/components/_buttons.scss';
+
+.notice-service-container {
+  @include flex-container(column, flex-start, center);
+
+  margin: 4.6875rem auto 0 auto;
+  padding: 2.375rem 4rem 3.125rem 4rem;
+  width: 100%;
+  max-width: 76.75rem;
+  height: auto;
+  min-height: calc(100vh - 4.6875rem);
+  background-color: white;
+
+  & > h1 {
+    @include font-container(3.125rem, 4.375rem, $basic-color);
+
+    margin-bottom: 1.375rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  .notice-service-table-wrap {
+    width: 100%;
+    height: auto;
+    min-height: 37.5rem;
+
+    & > div {
+      @include flex-container(column, space-evenly, center);
+
+      width: 100%;
+      height: 18.75rem;
+      text-align: center;
+
+      & > h3 {
+        width: 100%;
+      }
+
+      & > span {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .notice-service-container {
+    padding: 2.375rem 1.25rem 3.125rem 1.25rem;
+
+    .notice-service-table-wrap {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

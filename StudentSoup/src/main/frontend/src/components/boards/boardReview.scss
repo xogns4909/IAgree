@@ -1,0 +1,46 @@
+$basic-color: #ff611d;
+$basic-border-color: #bcbcbc;
+$text-color: #252525;
+$text-sub-color: #a8a8a8;
+
+.board-detail-bottom-review-div {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 2.875rem 0 2.875rem;
+
+  .board-detail-underline {
+    background-color: $basic-border-color;
+    height: 1px;
+  }
+}
+
+.board-detail-mobile-bottom-review-div {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 2.875rem 0 2.875rem;
+
+  .board-detail-mobile-bottom-review-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.5rem;
+
+    .board-detail-mobile-bottom-review-right-heart {
+      display: flex;
+      flex-direction: row;
+
+      .board-detail-mobile-function-heart-icon {
+        color: $basic-color;
+        margin-right: 0.125rem;
+      }
+
+      p {
+        color: $basic-color;
+      }
+    }
+  }
+
+  .board-detail-mobile-underline {
+    background-color: $basic-border-color;
+    height: 1px;
+  }
+}

@@ -1,0 +1,291 @@
+$basic-color: #ff611d;
+$basic-border-color: #bcbcbc;
+$sub-color: #5a5a5a;
+
+.restaurant-detail-bottom-dropdown-menus {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .restaurant-detail-bottom-dropdown {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 2rem;
+    border-bottom: 1px solid $sub-color;
+    cursor: pointer;
+
+    span {
+      font-size: 1rem;
+    }
+
+    .restaurant-detail-bottom-dropdown-svg-not {
+      transform: rotate(180deg);
+    }
+  }
+
+  .restaurant-detail-bottom-next-dropdown {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 2rem;
+    border-bottom: 1px solid $sub-color;
+
+    span {
+      font-size: 1rem;
+    }
+  }
+
+  .restaurant-detail-bottom-menu-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .restaurant-detail-bottom-menu {
+      height: 7.625rem;
+      margin: 1rem 2rem;
+      display: flex;
+      flex-direction: row;
+
+      .restaurant-detail-bottom-menu-img-div {
+        margin-right: 1.25rem;
+        position: relative;
+      }
+
+      .restaurant-detail-bottom-menu-text-div {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .restaurant-menu-name {
+          font-size: 1.25rem;
+          color: $sub-color;
+          font-weight: 500;
+        }
+
+        span {
+          font-size: 0.875rem;
+          color: $basic-border-color;
+        }
+
+        .restaurant-menu-price {
+          font-size: 1.25rem;
+          color: $basic-color;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .restaurant-detail-bottom-next-dropdown {
+    cursor: pointer;
+  }
+}
+
+.restaurant-tablet-detail-bottom-dropdown-menus {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .restaurant-tablet-detail-bottom-dropdown {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 2rem;
+    border-bottom: 1px solid $sub-color;
+    cursor: pointer;
+
+    span {
+      font-size: 1rem;
+    }
+
+    .restaurant-tablet-detail-bottom-dropdown-svg-not {
+      transform: rotate(180deg);
+    }
+  }
+
+  .restaurant-tablet-detail-bottom-next-dropdown {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 2rem;
+    border-bottom: 1px solid $sub-color;
+
+    span {
+      font-size: 1rem;
+    }
+  }
+
+  .restaurant-tablet-detail-bottom-menu-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .restaurant-tablet-detail-bottom-menu {
+      height: 7.625rem;
+      margin: 1rem 2rem;
+      display: flex;
+      flex-direction: row;
+
+      .restaurant-tablet-detail-bottom-menu-img-div {
+        margin-right: 1.25rem;
+        position: relative;
+
+        .restaurant-tablet-detail-bottom-menu-heart-div {
+          position: relative;
+          bottom: 7.3rem;
+          left: 3.1rem;
+          width: 4rem;
+          border: 1px solid $basic-color;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+
+          .restaurant-tablet-detail-bottom-menu-heart {
+            margin: 0.5rem;
+          }
+
+          p {
+            font-size: 1rem;
+            color: $basic-color;
+          }
+        }
+      }
+
+      .restaurant-tablet-detail-bottom-menu-text-div {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .restaurant-tablet-menu-name {
+          font-size: 1.25rem;
+          color: $sub-color;
+          font-weight: 500;
+        }
+
+        span {
+          font-size: 0.875rem;
+          color: $basic-border-color;
+        }
+
+        .restaurant-tablet-menu-price {
+          font-size: 1.25rem;
+          color: $basic-color;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .restaurant-tablet-detail-bottom-next-dropdown {
+    cursor: pointer;
+  }
+}
+
+.restaurant-mobile-detail-bottom-dropdown-menus {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .restaurant-mobile-detail-bottom-dropdown {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 2rem;
+    border-bottom: 1px solid $sub-color;
+    cursor: pointer;
+
+    span {
+      font-size: 1rem;
+    }
+
+    .restaurant-mobile-detail-bottom-dropdown-svg-not {
+      transform: rotate(180deg);
+    }
+  }
+
+  .restaurant-mobile-detail-bottom-next-dropdown {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 2rem;
+    border-bottom: 1px solid $sub-color;
+
+    span {
+      font-size: 1rem;
+    }
+  }
+
+  .restaurant-mobile-detail-bottom-menu-list {
+    width: 100%;
+
+    .restaurant-mobile-detail-bottom-menu {
+      width: 90%;
+      height: 7.625rem;
+      margin: 1rem 2rem;
+      display: flex;
+      flex-direction: row;
+
+      .restaurant-mobile-detail-bottom-menu-img-div {
+        margin-right: 1.25rem;
+        position: relative;
+
+        .restaurant-mobile-detail-bottom-menu-heart-div {
+          position: relative;
+          bottom: 7.3rem;
+          left: 3.1rem;
+          width: 4rem;
+          border: 1px solid $basic-color;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+
+          .restaurant-mobile-detail-bottom-menu-heart {
+            margin: 0.5rem;
+          }
+
+          p {
+            font-size: 1rem;
+            color: $basic-color;
+          }
+        }
+      }
+
+      .restaurant-mobile-detail-bottom-menu-text-div {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .restaurant-mobile-menu-name {
+          font-size: 1.25rem;
+          color: $sub-color;
+          font-weight: 500;
+        }
+
+        span {
+          font-size: 0.875rem;
+          color: $basic-border-color;
+        }
+
+        .restaurant-mobile-menu-price {
+          font-size: 1.25rem;
+          color: $basic-color;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .restaurant-mobile-detail-bottom-next-dropdown {
+    cursor: pointer;
+  }
+}

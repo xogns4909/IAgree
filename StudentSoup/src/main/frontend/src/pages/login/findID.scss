@@ -1,0 +1,102 @@
+$basic-color: #ff611d;
+$basic-border-color: #bcbcbc;
+$sub-color: #f7f7f7;
+$sub-text-color: #939393;
+$nonClick-button-color: #b8b8b8;
+
+.find-id-background {
+  width: 80vw;
+  height: 100%;
+  position: flex;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  .find-id-div {
+    width: calc(550px + 1.3vw);
+    height: 150px;
+    background-color: $sub-color;
+    padding: 25px 20px 10px 30px;
+
+    span {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    ul {
+      margin-top: 12px;
+      font-size: 16px;
+
+      li {
+        color: $sub-text-color;
+      }
+    }
+  }
+  .find-id-text {
+    font-size: 12px;
+    color: $basic-color;
+    display: none;
+    margin-top: 10px;
+  }
+  .find-id-text.active {
+    display: flex;
+    font-size: 12px;
+    color: $basic-color;
+    margin-top: 10px;
+  }
+
+  .find-id-email-form {
+    width: calc(550px + 1.3vw);
+    margin-top: 18px;
+    .find-id-input-email {
+      width: 100%;
+      height: 54px;
+      padding: 23px 0px 23px 23px;
+      font-size: 16px;
+    }
+  }
+
+  .find-id-auth-button-div {
+    width: calc(550px + 1.3vw);
+    margin-top: 50px;
+
+    .find-id-auth-button {
+      width: 100%;
+      height: 54px;
+      font-size: 16px;
+      color: white;
+      background-color: $nonClick-button-color;
+      border: none;
+      cursor: pointer;
+    }
+    .find-id-auth-button.active {
+      width: 100%;
+      height: 54px;
+      font-size: 16px;
+      color: white;
+      background-color: $basic-color;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  @media screen and (max-width: 1040px) {
+    .find-id-div {
+      border-radius: 0px;
+      width: 90vw;
+      height: auto;
+    }
+
+    .find-id-email-form {
+      border-radius: 0px;
+      width: 90vw;
+      margin-top: 18px;
+    }
+
+    .find-id-auth-button-div {
+      margin-top: 18px;
+      border-radius: 0px;
+      width: 90vw;
+    }
+  }
+}

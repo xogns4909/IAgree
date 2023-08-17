@@ -1,0 +1,26 @@
+.rating-stars {
+  &.hoverable {
+    .rating-star {
+      cursor: pointer;
+
+      &:hover {
+        &.filled,
+        &.empty {
+          path {
+            fill: var(--filled-color, #ff611d);
+          }
+        }
+      }
+    }
+  }
+
+  .rating-star {
+    &.filled path {
+      fill: var(--filled-color, #ff611d);
+    }
+
+    &.empty path {
+      fill: #ccc;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.add-schedule-modal {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  .add-schedule-modal-field {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+
+    .add-schedule-modal-label {
+      font-size: 0.875rem;
+      font-weight: bold;
+      width: 80px;
+    }
+
+    .add-schedule-modal-select {
+      height: 2rem;
+      font-size: 1rem;
+      padding: 0.25rem;
+      width: 100%;
+    }
+
+    input[type='color'] {
+      height: 2rem;
+      width: 100%;
+      padding: 0;
+    }
+
+    input[type='text'] {
+      height: 2rem;
+      font-size: 1rem;
+      padding: 0.25rem;
+      width: 100%;
+    }
+  }
+
+  .add-schedule-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    .add-schedule-modal-cancel-button {
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #fff;
+      background-color: #999;
+      &:hover {
+        background-color: #777;
+      }
+    }
+
+    .add-schedule-modal-save-button {
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #ff611d;
+
+      &:hover {
+        background-color: #cc4e15;
+      }
+    }
+  }
+}

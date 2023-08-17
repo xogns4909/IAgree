@@ -1,0 +1,407 @@
+$basic-color: #ff611d;
+$basic-border-color: #bcbcbc;
+$text-color: #252525;
+$text-sub-color: #a8a8a8;
+
+.board-notice-service-detail-main {
+  background-color: #fff;
+  margin: 0 auto;
+  padding-top: 4.8rem;
+  height: auto;
+  min-height: 100vh;
+  max-width: 76.8rem;
+
+  .board-notice-service-detail-top-div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.3125rem;
+
+    .board-notice-service-detail-top {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1rem 2.85rem;
+
+      .board-notice-service-detail-top-left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          margin-right: 1rem;
+          cursor: pointer;
+        }
+
+        span {
+          font-size: 2.75rem;
+          color: $basic-color;
+          font-weight: 500;
+        }
+      }
+
+      .board-notice-service-detail-top-right {
+        button {
+          background-color: $basic-color;
+          display: flex;
+          flex-direction: row;
+          border-radius: 1.5rem;
+          color: #fff;
+          border: none;
+          width: 7.25rem;
+          height: 2.375rem;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+
+          img {
+            margin-right: 0.5rem;
+          }
+          p {
+            color: #fff;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .board-notice-service-detail-mid-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $basic-border-color;
+    margin: 1rem 2.85rem;
+    border-radius: 5px;
+    padding-bottom: 30px;
+
+    .board-notice-service-detail-mid-title-div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 1.875rem;
+
+      .board-notice-service-detail-mid-title {
+        display: flex;
+        flex-direction: row;
+
+        span {
+          font-size: 1.25rem;
+          color: $text-color;
+          font-weight: 500;
+          margin-right: 0.5rem;
+        }
+
+        p {
+          font-size: 1.25rem;
+          color: $basic-color;
+        }
+      }
+
+      .board-notice-service-detail-mid-title-info {
+        width: 100%;
+        margin-top: 0.5rem;
+
+        p {
+          font-size: 0.875rem;
+          color: $text-sub-color;
+        }
+      }
+
+      .board-notice-service-detail-underline {
+        margin-top: 1.25rem;
+        background-color: $basic-border-color;
+        height: 1px;
+      }
+    }
+
+    .board-notice-service-detail-content-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      padding: 0 1.875rem;
+
+      .board-notice-service-detail-content {
+        font-size: 1rem;
+        color: $text-color;
+      }
+    }
+  }
+
+  .board-notice-service-detail-bottom-div {
+    display: flex;
+    flex-direction: column;
+
+    .board-notice-service-detail-bottom-review-text {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 2.85rem;
+
+      .board-notice-service-detail-bottom-review-count {
+        p {
+          font-size: 1rem;
+          color: #404040;
+        }
+      }
+
+      .board-notice-service-detail-bottom-function {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .board-notice-service-detail-bottom-modify {
+          font-size: 1rem;
+          color: $text-sub-color;
+          margin-right: 0.5rem;
+          font-weight: 500;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .board-notice-service-detail-bottom-report {
+          font-size: 1rem;
+          color: $text-sub-color;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .board-notice-service-detail-bottom-review-write-div {
+      display: flex;
+      flex-direction: row;
+      justify-self: flex-start;
+      align-items: center;
+
+      .board-notice-service-detail-bottom-review-write {
+        width: 100%;
+        padding: 0 2.875rem;
+        margin-top: 1rem;
+        display: flex;
+
+        textarea {
+          width: 90%;
+          border: 1px solid $basic-border-color;
+          border-radius: 5px;
+          padding: 1rem;
+          resize: none;
+        }
+
+        button {
+          width: 10%;
+          height: 66px;
+          background-color: $basic-color;
+          border-radius: 5px;
+          color: #fff;
+          font-size: 1rem;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.board-notice-service-detail-mobile-main {
+  background-color: #fff;
+  margin: 0 auto;
+  height: auto;
+  min-height: 100vh;
+  padding-top: 4.8rem;
+  max-width: 76.8rem;
+
+  .board-notice-service-detail-mobile-top-div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.3125rem;
+
+    .board-notice-service-detail-mobile-top {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1rem 1.25rem;
+
+      .board-notice-service-detail-mobile-top-left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          margin-right: 1rem;
+          cursor: pointer;
+        }
+
+        span {
+          font-size: 1.5rem;
+          color: $basic-color;
+          font-weight: 500;
+        }
+      }
+
+      .board-notice-service-detail-mobile-top-right {
+        button {
+          background-color: $basic-color;
+          display: flex;
+          flex-direction: row;
+          border-radius: 1.5rem;
+          color: #fff;
+          border: none;
+          width: 7.25rem;
+          height: 2.375rem;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+
+          img {
+            margin-right: 0.5rem;
+          }
+          p {
+            color: #fff;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .board-notice-service-detail-mobile-mid-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $basic-border-color;
+    margin: 1rem 1.25rem;
+    border-radius: 5px;
+    padding-bottom: 30px;
+
+    .board-notice-service-detail-mobile-mid-title-div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 1.875rem;
+
+      .board-notice-service-detail-mobile-mid-title {
+        display: flex;
+        flex-direction: row;
+
+        span {
+          font-size: 1.25rem;
+          color: $text-color;
+          font-weight: 500;
+          margin-right: 0.5rem;
+        }
+
+        p {
+          font-size: 1.25rem;
+          color: $basic-color;
+        }
+      }
+
+      .board-notice-service-detail-mobile-mid-title-info {
+        width: 100%;
+        margin-top: 0.5rem;
+
+        p {
+          font-size: 0.875rem;
+          color: $text-sub-color;
+        }
+      }
+
+      .board-notice-service-detail-mobile-underline {
+        margin-top: 0.75rem;
+        background-color: $basic-border-color;
+        height: 1px;
+      }
+    }
+
+    .board-notice-service-detail-mobile-content-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      padding: 0 1.875rem;
+
+      .board-notice-service-detail-mobile-content {
+        font-size: 1rem;
+        color: $text-color;
+      }
+    }
+  }
+
+  .board-notice-service-detail-mobile-bottom-div {
+    display: flex;
+    flex-direction: column;
+
+    .board-notice-service-detail-mobile-bottom-review-text {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 1.25rem;
+
+      .board-notice-service-detail-mobile-bottom-review-count {
+        p {
+          font-size: 1rem;
+          color: #404040;
+        }
+      }
+
+      .board-notice-service-detail-mobile-bottom-function {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .board-notice-service-detail-mobile-bottom-modify {
+          font-size: 1rem;
+          color: $text-sub-color;
+          margin-right: 0.5rem;
+          font-weight: 500;
+        }
+
+        .board-notice-service-detail-mobile-bottom-report {
+          font-size: 1rem;
+          color: $text-sub-color;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .board-notice-service-detail-mobile-bottom-review-write-div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+
+      .board-notice-service-detail-mobile-bottom-review-write {
+        width: 100%;
+        padding: 0 1.25rem;
+        margin-top: 1rem;
+        display: flex;
+
+        textarea {
+          width: 80%;
+          border: 1px solid $basic-border-color;
+          border-radius: 5px;
+          padding: 1rem;
+          resize: none;
+        }
+
+        button {
+          width: 20%;
+          height: 66px;
+          background-color: $basic-color;
+          border-radius: 5px;
+          color: #fff;
+          font-size: 1rem;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.adminpage-maincontainer {
+  width: 100%;
+  height: auto;
+  min-height: 120vh;
+  background-color: white;
+}
+.adminpage-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+
+  th,
+  td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+
+  td {
+    font-size: 14px;
+  }
+
+  .adminpage-edit-button,
+  .adminpage-delete-button {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+
+  .adminpage-edit-button {
+    background-color: #4caf50;
+    color: white;
+
+    &:hover {
+      background-color: #45a049;
+    }
+  }
+
+  .adminpage-delete-button {
+    background-color: #f44336;
+    color: white;
+
+    &:hover {
+      background-color: #e33e28;
+    }
+  }
+}

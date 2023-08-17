@@ -1,0 +1,141 @@
+@import 'sass/abstracts/_variables_color';
+@import 'sass/abstracts/_mixins';
+
+.background {
+  @include flex-container(column, center, center);
+
+  width: 100vw;
+  height: 100vh;
+
+  .login-main {
+    @include flex-container(column, center, center);
+
+    margin: 7.1875rem 0;
+    border-radius: 15px;
+    width: 39.6875rem;
+    height: 44.625rem;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    h2 {
+      @include font-container(2.5rem, 3.5rem, $subject-font-color);
+
+      margin-bottom: 2.8125rem;
+    }
+
+    form {
+      @include flex-container(column, center, center);
+
+      width: 100%;
+
+      .id,
+      .password {
+        @include font-container(1rem, 1.3125rem, #888888);
+
+        margin-bottom: 0.625rem;
+        padding-left: 0.9375rem;
+        border: 1px solid $basic-border-color;
+        border-radius: 5px;
+        width: 78.26%;
+        min-width: 15.625rem;
+        height: 3.75rem;
+
+        &::placeholder {
+          color: $place-holder-color;
+        }
+      }
+
+      .login-keep-wrap {
+        @include flex-container(row, space-between, center);
+        @include font-container(1rem, 1.3125rem, $sub-feature-color);
+
+        margin-bottom: 2.5625rem;
+        width: 78.26%;
+        min-width: 15.625rem;
+
+        .remember-wrap {
+          @include flex-container(row, space-between, center);
+
+          height: 1.75rem;
+
+          .checked-remember-id {
+            border-radius: 15px;
+            width: 0.9375rem;
+            height: 0.9375rem;
+            background-color: $basic-color;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          .unchecked-remember-id {
+            border: 1px solid $basic-border-color;
+            border-radius: 15px;
+            width: 0.9375rem;
+            height: 0.9375rem;
+            background-color: white;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          span {
+            padding-left: 6px;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          color: $sub-feature-color;
+        }
+      }
+
+      button {
+        @include font-container(1.25rem, 1.75rem, white);
+
+        margin-bottom: 0.625rem;
+        border-radius: 5px;
+        width: 78.26%;
+        min-width: 15.625rem;
+        height: 3.375rem;
+      }
+
+      .login-button {
+        border: 1px solid $basic-color;
+        color: white;
+        background-color: $basic-color;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .signup-link {
+        @include flex-container(row, center, center);
+
+        width: 100%;
+        text-decoration: none;
+
+        .signup-button {
+          background-color: white;
+          border: 1px solid $basic-color;
+          color: $basic-color;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1040px) {
+    .login-main {
+      margin: 0;
+      border-radius: 0rem;
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+}

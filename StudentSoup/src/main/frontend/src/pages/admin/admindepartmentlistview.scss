@@ -1,0 +1,127 @@
+.admindepartmentlistview-select-container {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  select {
+    width: 70%;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    appearance: none; // 브라우저 기본 스타일 제거
+  }
+
+  .admindepartmentlistview-search-button {
+    padding: 8px 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #45a049;
+    }
+  }
+}
+
+.admindepartmentlistview-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  thead {
+    tr {
+      background-color: #f2f2f2;
+    }
+    th {
+      padding: 10px;
+      border: 1px solid #dddddd;
+    }
+  }
+  tbody {
+    tr {
+      &:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    }
+    td {
+      padding: 10px;
+      border: 1px solid #dddddd;
+    }
+  }
+}
+
+.admindepartmentlistview-button {
+  padding: 5px 10px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+  &:hover {
+    background-color: #ddd;
+  }
+}
+
+.admindepartmentlistview-edit-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.admindepartmentlistview-delete-button {
+  background-color: #f44336;
+  color: white;
+}
+.admindepartmentlistview-search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  .admindepartmentlistview-select-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    select {
+      padding: 8px;
+      margin-right: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      width: 70%;
+    }
+
+    .admindepartmentlistview-search-button {
+      padding: 8px 12px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #45a049;
+      }
+    }
+  }
+
+  .admindepartmentlistview-add-button {
+    padding: 8px 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    margin-bottom: 1rem;
+
+    &:hover {
+      background-color: #45a049;
+    }
+  }
+}

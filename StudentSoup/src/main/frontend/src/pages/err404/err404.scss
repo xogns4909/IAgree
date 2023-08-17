@@ -1,0 +1,16 @@
+.err-page {
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  .err-number {
+    font-size: calc(140px + 3vw);
+    font-weight: 600;
+  }
+  .err-string {
+    font-size: calc(40px + 1vw);
+  }
+}
